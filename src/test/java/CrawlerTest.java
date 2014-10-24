@@ -9,11 +9,12 @@ import java.net.URL;
  */
 public class CrawlerTest {
     public static void main(String[] args) throws IOException {
-        Crawler c = new Crawler();
-        URL u = new URL("http://vk.com");
-//        System.out.println(c.getURL(u.toString()));
-        c.addURL(u.toString());
-        c.processQuery();
+        Crawler c = new Crawler(0);
+        URL u = new URL("http://test.visualworld.ru");
+        //System.out.println(c.getURL(u.toString()));
+//        c.addURL(u.toString());
+        c.addUrl(u.toString());
+        c.processQueue();
 
 
     }
